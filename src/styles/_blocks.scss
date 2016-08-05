@@ -1,0 +1,135 @@
+.blocks {
+    align-items: flex-start;
+}
+
+.blocks__block {
+
+    @media all and (min-width: 768px) {
+        margin-bottom: 15px;
+    }
+}
+
+.project {
+
+}
+
+.project--single {
+    box-shadow: none;
+}
+
+.project__name {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-transform: uppercase;
+
+    a {
+        color: inherit;
+    }
+}
+
+.project__name--large {
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.project__border {
+    height: 4px;
+}
+
+.project__image {
+    background-position: center center;
+    background-size: cover;
+    border: 1px solid #DADADA;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-bottom: 75%;
+
+    a {
+        display: block;
+        height: 100%;
+        position: absolute;
+        text-decoration: none;
+        width: 100%;
+    }
+}
+
+.project__content {
+    color: #626b6b;
+    display: block;
+    font-size: 16px;
+    text-align: left;
+}
+
+.project__meta {
+    margin: 0;
+}
+
+    .project__meta__link {
+        margin-bottom: 15px;
+    }
+
+.project__content--black {
+    color: #000;
+}
+
+.thumbnail {
+    height: 320px;
+    
+    @media all and (min-width: 768px) {
+        border-left: 12px solid #FFF;
+    }
+
+    & > a {
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+}
+
+.thumbnail--large {
+    height: 320px;
+
+    @media all and (min-width: 768px) {
+        height: 460px;
+
+        .thumbnail__heading {
+            font-size: 46px;
+        }
+    }
+}
+
+.thumbnail__inner {
+    color: #FFF;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    a {
+        color: #FFF;
+    }
+}
+
+.thumbnail__heading {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+}
+
+.thumbnail__subheading {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
